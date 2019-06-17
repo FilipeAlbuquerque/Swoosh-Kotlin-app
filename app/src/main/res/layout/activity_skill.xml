@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SkillActivity">
+        tools:context=".controller.SkillActivity">
 
     <ImageView
             android:layout_width="0dp"
@@ -44,27 +44,28 @@
         <ToggleButton
                 android:text="@string/beginner"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton8" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/begginerBtn" android:layout_weight="1"
                 android:background="@drawable/swoosh_toggle" android:textColor="@android:color/white"
-                android:textOff="@string/begginer" android:textOn="@string/beginner"
-                app:fontFamily="@font/montserrat"/>
+                app:fontFamily="@font/montserrat" android:checked="false" android:onClick="onBegginerClick"
+                android:textOff="@string/beginner" android:textOn="@string/beginner"/>
         <ToggleButton
-                android:text="@string/baller"
+
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton9" android:layout_weight="1"
+                android:layout_height="wrap_content" android:id="@+id/ballerBtn" android:layout_weight="1"
                 android:background="@drawable/swoosh_toggle" android:textColor="@android:color/white"
-                android:textOff="@string/baller" android:textOn="@string/baller"
-                app:fontFamily="@font/montserrat" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+
+                app:fontFamily="@font/montserrat" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                android:onClick="onBallerClick" android:textOff="@string/baller" android:textOn="@string/baller" android:text="@string/baller"/>
     </LinearLayout>
     <Button
             android:text="@string/finish"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:id="@+id/finishBtn" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent" android:textSize="18sp"
             android:textColor="@android:color/white" android:background="@drawable/swoosh_button"
-            app:fontFamily="@font/montserrat"/>
+            app:fontFamily="@font/montserrat" android:onClick="onFinishClicked"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
