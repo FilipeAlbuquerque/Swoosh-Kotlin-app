@@ -52,6 +52,4 @@ class LeagueActivity : BaseActivity() {
             Toast.makeText(this, "Please select a league.", Toast.LENGTH_SHORT).show()
         }
     }
-
-
 }
